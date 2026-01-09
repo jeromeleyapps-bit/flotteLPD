@@ -1,0 +1,62 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+  width: 100%;
+  min-height: 100vh;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* Améliorations pour mobile */
+@media (max-width: 600px) {
+  .v-container {
+    padding: 12px !important;
+  }
+  
+  .v-card {
+    margin-bottom: 12px;
+  }
+  
+  /* Assurer une taille minimale pour les boutons tactiles */
+  .v-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Améliorer l'espacement sur mobile */
+  .v-row {
+    margin: 0 -6px;
+  }
+  
+  .v-col {
+    padding: 6px;
+  }
+}
+
+/* Optimisations pour tablettes */
+@media (min-width: 601px) and (max-width: 960px) {
+  .v-container {
+    padding: 16px !important;
+  }
+}
+
+/* Desktop */
+@media (min-width: 961px) {
+  .v-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
